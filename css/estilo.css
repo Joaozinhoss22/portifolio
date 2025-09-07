@@ -1,0 +1,196 @@
+body {
+    overflow-x: hidden;
+}
+
+
+
+#sobre {
+    background-color: rgba(4, 8, 250, 0.39);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    color: white;
+    margin: 4rem;
+}
+
+#mn {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: rgb(32, 31, 31);
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    color: gray;
+    font-size: 2rem;
+    font-family: "Ojuju", sans-serif;
+}
+
+#h2 {
+    color: black;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#joao {
+
+    width: 150px;
+    border-radius: 1000%;
+    border: 5px solid white;
+    margin-top: -15px;
+    min-width: 280px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.8s;
+}
+
+#lar {
+    width: 40px;
+    transition: 0.8s;
+}
+
+#lar:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #2d3748;
+    border-radius: 40%;
+}
+
+#nav {
+    margin-right: -20px;
+    align-items: right;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#experiencia {
+    background-image: url(../img/software-developer.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    #joao {
+        width: 100px;
+        border-radius: 1000%;
+        border: 5px solid white;
+        margin-top: -15px;
+        min-width: 180px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.8s;
+    }
+
+    #redeSociais {
+        justify-content: center;
+        display: none;
+    }
+}
+
+
+:root {
+    --bg-dark: #1a202c;
+    --text-dark: #cbd5e0;
+    --card-dark: #2d3748;
+    --toggle-bg-light: #a0aec0;
+    --toggle-bg-dark: #4a5568;
+    --toggle-thumb-dark: #cbd5e0;
+    --toggle-thumb-light: #2d3748;
+}
+
+body {
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos do interruptor de tema */
+.toggle-switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--toggle-bg-dark);
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.toggle-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--toggle-thumb-dark);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.toggle-switch-slider {
+    background-color: var(--toggle-bg-light);
+}
+
+input:checked+.toggle-switch-slider:before {
+    background-color: var(--toggle-thumb-light);
+    transform: translateX(26px);
+}
+
+/* Estilos do tema claro */
+body.light-theme {
+    --bg-dark: #f7fafc;
+    --text-dark: #2d3748;
+    --card-dark: #e2e8f0;
+    --toggle-thumb-dark: #2d3748;
+    --toggle-bg-dark: #a0aec0;
+}
+
+#btn-top {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da lateral direita da tela */
+    display: none; /* Começa oculto */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    padding: 4px 6px; /* Espaçamento interno para centralizar o ícone */
+}
